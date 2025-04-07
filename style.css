@@ -84,18 +84,31 @@ body {
     border-radius: 10px;
     cursor: pointer;
 }
-@media(max-width:768px){
-    .top-heading__container{
-        flex-direction: column;
+@media (max-width: 768px) {
+    .search-container-1 {
+      flex-direction: column;
+      width: 100%;
+      margin-left: 0;
+      padding: 10px;
     }
-    .search-container input,
-    .search-container-1
-    .search-container-1 input
-    .search-container-button{
-        width:90%;
-        margin:5px 0;
+  
+    .search-container-button {
+      margin-top: 10px;
+      width: 100%;
     }
-}
+  
+    .place-search_heading_1 {
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .place-search_paragraph {
+      flex-direction: column;
+      gap: 10px;
+      margin-left: 0;
+      align-items: center;
+    }
+  }
 .sale-image{
     background-color: black;
     height: 300px;
