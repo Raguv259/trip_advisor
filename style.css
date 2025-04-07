@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 20px;
+}
+
+.top-heading__container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    flex-wrap: nowrap;
+}
+
+.top_center_algn {
+    display: flex;
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    gap: 60px;
+    
+    
+}
+.signin{
+    
+    background-color: black;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+@media(max-width:600px){
+    .top-heading__container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .signin{
+        margin-top:10px;
+    }
+}
+
+.place-search_heading{
+    display: flex;
+    justify-content: center;
+}
+.place-search_heading_1{
+    margin-left: 100px;
+}
+.place-search_paragraph{
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin-left: 50px;
+}
+.search-container{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.search-container-1{
+    display: flex;
+    justify-content: space-between;
+    width:90%;
+    max-width:600px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 40px;
+    padding:8px 16px;
+    margin-left: 80px;
+}
+.search-container-1 input{
+    border:none;
+    
+}
+.search-container-button{
+    background-color: seagreen;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.sale-image{
+    background-color: black;
+    height: 300px;
+    width: 100%;
+    position: relative;
+}
+.sale-image img{
+    height:300px ;
+    width: 100%;
+}
+.beta-flex{
+    display: flex;
+}
+.sale-image__offer{
+    width: 50%;
+    color: white;
+    padding: 2%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    animation-name:zoom;
+    animation-duration: 2s;
+    
+    animation-fill-mode: forwards; /*default */
+}
+.beaches-container-card{
+    display: flex;
+}
+.course-card{
+    margin-top: 20px;
+    margin-right: 20px;
+    height: 10px;
+}
+.course-card img{
+    width: 200px;
+}
+.beta_button{
+    background-color:black;
+    color: white;
+    margin-left: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.start{
+    background-color: black;
+    color:white;
+    padding: 10px;
+    max-width: 125px;
+    border-radius: 10px;
+    display: flex;
+    
+}
+@media(max-width:600px){
+    .course-card h1{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .signin{
+        margin-top:10px;
+    }
+}
+.card-grid {
+    display: flex;
+    justify-content: space-around;
+  }
+.beaches-container_1{
+   margin-top: 20px;
+   
+}
+
+  .card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover {
+    transform: scale(1.03);
+  }
+
+  .card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+  }
+
+ 
+
+  .label {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+
+  @media (max-width: 600px) {
+    .card img {
+      height: 180px;
+    }
+  }
+
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  .tour-section {
+     margin-top: 20px;
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: calc(25% - 20px);
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .card-content {
+    padding: 15px;
+  }
+
+  .card-title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .rating {
+    color: green;
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+
+  .price {
+    color: #555;
+    font-size: 14px;
+  }
+
+  @media (max-width: 1000px) {
+    .card {
+      width: calc(50% - 20px);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .card {
+      width: 100%;
+    }
+  }
+
+
+
+  footer {
+    background-color: #f2f2f2;
+    padding: 40px 60px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .footer-section {
+    flex: 1 1 200px;
+    margin: 10px;
+  }
+
+  .footer-section h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .footer-section a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+
+  .footer-bottom {
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+    padding-top: 20px;
+    font-size: 13px;
+    color: #333;
+  }
+
+  .footer-bottom a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+
+  .footer-bottom .legal {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  .footer-icons {
+    margin-top: 20px;
+  }
+
+  .footer-icons i {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+
+  .footer-dropdowns {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  select {
+    padding: 5px;
+    font-size: 14px;
+  }
