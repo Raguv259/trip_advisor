@@ -134,6 +134,51 @@ body {
     
     animation-fill-mode: forwards; /*default */
 }
+@media (max-width: 500px) {
+    .sale-image{
+        background-color: black;
+        height: 300px;
+        width: 100%;
+        position: relative;
+    }
+    .sale-image img{
+        height:300px ;
+        width: 100%;
+    }
+    .beta-flex{
+        display: flex;
+    }
+    .sale-image__offer{
+        width: 50%;
+        color: white;
+        padding: 2%;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        animation-name:zoom;
+        animation-duration: 2s;
+        
+        animation-fill-mode: forwards; /*default */
+    }
+    .beaches-container-card{
+        display: flex;
+    }
+    .course-card{
+        margin-top: 20px;
+        margin-right: 20px;
+        height: 10px;
+    }
+    .course-card img{
+        width: 200px;
+    }
+    .beta_button{
+        background-color:black;
+        color: white;
+        margin-left: 5px;
+        padding: 5px;
+        border-radius: 5px;
+    }
+}
 .beaches-container-card{
     display: flex;
 }
