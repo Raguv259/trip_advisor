@@ -47,9 +47,6 @@ body {
 .place-search_heading{
     display: flex;
     justify-content: center;
-    flex-wrap: nowrap;
-    flex-grow: 1;
-    flex-basis: 100%;
 }
 .place-search_heading_1{
     margin-left: 100px;
@@ -86,6 +83,18 @@ body {
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
+}
+@media(max-width:768px){
+    .top-heading__container{
+        flex-direction: column;
+    }
+    .search-container input,
+    .search-container-1
+    .search-container-1 input
+    .search-container-button{
+        width:90%;
+        margin:5px 0;
+    }
 }
 .sale-image{
     background-color: black;
